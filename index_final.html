@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<div id="chartContainer">
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.1.6.min.js"></script>
+  <script type="text/javascript">
+  var svg = dimple.newSvg("#chartContainer", 590, 450);
+  var data = [
+    {'Sex': 'Male', 'Class': '3', 'Survival':"0.150198"},
+    {'Sex': 'Male', 'Class': '2', 'Survival':"0.151515"},    
+    {'Sex': 'Male', 'Class': '1', 'Survival':"0.396040"},
+    {'Sex': 'Female', 'Class': '3', 'Survival':"0.460784"},
+    {'Sex': 'Female', 'Class': '2', 'Survival':"0.918919"},
+    {'Sex': 'Female', 'Class': '1', 'Survival':"0.964706"}
+  ];
+
+  // Draw chart with Dimple js
+  var myChart = new dimple.chart(svg, data);
+  myChart.setBounds(80, 40, 420, 330)
+  var x = myChart.addCategoryAxis("x", ["Sex", "Class"]);
+  // Show horizontal line to separate male and female
+  x.showGridlines = true;
+  // Change x axis title
+  x.title = "Titanic passengers by Sex and Class";
+  var y = myChart.addMeasureAxis("y", "Survival");
+  // Change y axis data to percentage format
+  y.tickFormat = "%";
+  // Change y axis title
+  y.title = "Survival rate of passengers (percentage)";
+  var s = myChart.addSeries(["Sex", "Class"], dimple.plot.bar);
+  s.lineWeight = 6;
+  s.lineMarkers = true;
+  // Add legend
+  var myLegend = myChart.addLegend(520, 100, 60, 300, "Right");
+  myChart.draw();
+
+  // Added chart title with D3
+  svg.append("text")
+   .attr("x", myChart._xPixels() + myChart._widthPixels() / 2)
+   .attr("y", myChart._yPixels() - 20)
+   .style("text-anchor", "Middle")
+   .style("font-family", "sans-serif")
+   .style("font-weight", "bold")
+   .text("Survival of Titanic Passengers: women came first, but so did higher classes");
+
+  // Add legend title
+  svg.selectAll("title_text")
+   .data(["Passenger class"])
+   .enter()
+   .append("text")
+   .attr("x", 510)
+   .attr("y", function (d, i) { return 90 + i * 14; })
+   .style("text-anchor", "Right")
+   .style("font-family", "sans-serif")
+   .style("font-size", "10.5px")
+   .text(function (d) { return d; });
+  </script>
+</div>
+</html>
