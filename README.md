@@ -9,20 +9,41 @@ rates. My chart shows that both these things are true: women survived more than 
 classes survived more than lower classes overall.
 
 ###Data Selection and Exploration
-My visualization draws from project 2 of my Data Analyst Nanodegree:
-[Investigate the Titanic Dataset](https://github.com/robertozanchi/titanic-data), also presented
-in ```titanic_analysis.html```. The iPython Notebook and raw data are included in the Github repository.
+My visualization draws from project 2 of the Data Analyst Nanodegree: Investigate the Titanic Dataset.
+The original iPython Notebook with the analysis and the raw data are included in my project 2
+[Github repository](https://github.com/robertozanchi/titanic-data). The full report is also included 
+here as ```titanic_analysis.html```. 
 
-### Visualizatin Design
+### Visualization Design
 ####Initial sketch
+I started the visualization process by drawing a sketch by hand, here included as ```sketch.jpg```.
+The initial idea was to represent the data as a vertical bar chart, where the categories on the x axis
+were passenger classes (1st, 2nd and 3rd) and each category had bars for female and male passengers.  
 
-####Version 1 of the chart in Dimple js
+####Version 1 of the chart
+I translated the initial sketch into the first version of the chart in Dimple js: ```index_1.html```.
 
+####Version 2 of the chart
+In response to the initial feedback received - reported below - I produced ```index_2.html``` with a
+changed classification on the x axis. The passengers are now grouped by sex and then class. This results
+in more clarity in showing the different survival rates and the declining survival rate between women and
+men, and first to third class.
+
+####Final version of the chart
+In the final version of the chart, ```index_final.html```, I added further details for clarity and more 
+effective communication:
+- Separated bars for males and females with a vertical line in the background;
+- Renamed titles of both axes;
+- Added a title to the graph;
+- Added a legend and a legend title.
 
 ###Feedback
-I collected feedback at all stages
-Feedback - include all feedback you received from others on your visualization from the first sketch to the final visualization
+I collected feedback from 5 people among family members and friends, at all stages of visualization design
+outlined above.
 
+The most useful comments/suggestions were:
+- Aggregate data by sex first and then class, to show declining survival rate;
+-  
 
 
 ###Resources
