@@ -9,11 +9,9 @@ rates. My chart shows that both these things are true: women survived more than 
 classes survived more than lower classes overall.
 
 ###Data Selection and Exploration
-My visualization draws from the analysis of Titanic passenger data as part of project 2 of the
-Data Analyst Nanodegree: [Investigate the Titanic Dataset](https://github.com/robertozanchi/titanic-data).
-
-
-
+My visualization draws from project 2 of my Data Analyst Nanodegree:
+[Investigate the Titanic Dataset](https://github.com/robertozanchi/titanic-data), also presented
+in ```titanic_analysis.html```. The iPython Notebook and raw data are included in the Github repository.
 
 ### Visualizatin Design
 ####Initial sketch
