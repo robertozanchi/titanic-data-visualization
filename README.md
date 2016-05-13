@@ -2,27 +2,32 @@
 
 This is project 6 of Udacity's Data Analyst Nanodegree, connected to the course DATA VISUALIZATION WITH D3.JS.
 
-### Summary
+###Summary
 I represented survival rate among Titanic passengers through a grouped bar chart in Dimple js. 
-The key question I asked of the data was whether survival of women or class of passengers
-resulted in a hgher survival rate. My chart shows that both these things are true: women survived
-more than men, but higher classes survived more than lower classes overall.
+I wanted to show whether being a woman or a passenger of higher class resulted in higher survival
+rates. My chart shows that both these things are true: women survived more than men, but higher
+classes survived more than lower classes overall.
 
-### Design
+###Data Selection and Exploration
+My visualization draws from the analysis of Titanic passenger data as part of project 2 of the
+Data Analyst Nanodegree: [Investigate the Titanic Dataset](https://github.com/robertozanchi/titanic-data).
+
+
+
+
+### Visualizatin Design
 ####Initial sketch
 
 ####Version 1 of the chart in Dimple js
 
 
-Design - explain any design choices you made including changes to the visualization after collecting feedback
-
-### Feedback
+###Feedback
 I collected feedback at all stages
 Feedback - include all feedback you received from others on your visualization from the first sketch to the final visualization
 
 
 
-### Resources
+###Resources
 - http://dimplejs.org/examples_viewer.html?id=bars_vertical_grouped
 - http://jsfiddle.net/farrukhsubhani/S6FLv/7/
 - http://stackoverflow.com/questions/25416063/title-for-charts-and-axes-in-dimple-js-charts
